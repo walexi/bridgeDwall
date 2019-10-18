@@ -1,18 +1,349 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bridge The Wall</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
 
-<article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment. If you need to you can always <a href="mailto:info@bridgethewall.tech#">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
-        <p>&mdash; The Team</p>
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logo.png" alt="Global">
+    <p>Bridge The Wall</p>
+  </a>
+  <p class="device-notification--message">Stay up to date with news from the Bridge The Wall Initiative.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="assets/img/logo.png" alt="Global">
+            <p>Bridge The Wall</p>
+          </a>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>About</span></li>
+            <li><span>Apply</span></li>
+            <li><span>Mentors</span></li>
+            <li><span>Team</span></li>
+            <li><span>Advisors</span></li>
+            <li><span>Contact us</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Target = Impact<br>Focus = Change</h1>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+
+                  </g>
+                  </svg>
+                <button>
+                  <span class="btn-background"></span>
+                </button>
+                <!-- <img src="assets/img/introduction_gene.png" alt="Welcome"> -->
+              </div>
+              <div class="intro--options">
+               <!--  <a href="#0">
+                  <h3>OpenMined</h3>
+                  <p>OpenMined is an open-source community focused on researching, developing, and promoting tools for secure, privacy-preserving, value-aligned artificial intelligence.</p>
+                </a>
+                <a href="#0">
+                  <h3>Broad Institute of Harvard and MIT</h3>
+                  <p class="about--desc">Broad Institute is empowering a revolution in biomedicine to accelerate the pace at which the world conquers disease</p>
+                </a>
+                <a href="#0">
+                  <h3>Jonathan Bloom, Ph.D</h3>
+                  <p>Project Supervisor</p>
+                </a> -->
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <p class="description">Bridge The Wall is an initiative focused on exposing undergraduates (in penultimate and final years) from underrepresented groups in Artificial Intelligence, with a working knowledge of AI<br>Particiapants are peered with Mentors with vast experience either in the Academia or Industry based on particpant's career preference.<br>Participants get to work on exciting real world AI tasks from local and international clients, they also get the opportunity to hone their communications skills by interacing with clients to discuss business KPIs, etc<br>BTW is a non-residential program and is fully remote, though absolutely free for particpants, it is mandatory for each one to mentor at least 5 undergraduates after graduating from the program and landing their first role or resuming in a related graduate prorgram (whichever is applicable)</p>
+                <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                     </g>
+                    </svg>
+                  </span>
+                <img src="assets/img/about-visual.png" alt="About">
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Apply</h2>
+              <td>
+                <tr><h3>Application Requirements</h3><ul>
+                  <li>You MUST be enrolled in an undergraduate degree in Computer Science or a related Engineering program</li>
+                  <li>You MUST self-identify as Black and/or of African descent</li>
+                  <li>You MUST have proficiency in at least one programming language (Preferably Python)</li>
+                  <li>You MUST either be in the penultimate OR final year of your program. (Expected graduation should be 2020 or 2021)</li>
+                  <li>You MUST commit to mentor a minimum of 5 undergraduates on completing the program AND either resuming your graduate studies in a related field or landing your first job</li>
+                  <li>Demonstrated interest in AI is preferable, either through participation in hackathons, courses, MOOCs, open source contribution etc</li>
+                </ul></tr>
+                <p>If selected, you will be given a small stipend to support through the program and ensure full participation. Stipend is expected to cater for expenses such as Internet. In other cases, particpants may have the privilege to work from a nearby co-working space over the weekends</p>
+                <h3>Application can be filled <a class="typeform-share link" href="https://bridgethewall.typeform.com/to/lvqdKS" data-mode="popup" style="color:#267DDD;text-decoration:underline;font-size:20px;" data-submit-close-delay="5" target="_blank">here</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script></h3>
+                <h3>APPLICATION CLOSES ON THE 19TH OF NOVEMBER, 2019 00:00 <a href=''>AOE</a></h3>
+              </td>
+              <p></p>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Mentors</h2>
+              <p style="text-align: center;">We have a great team of Mentors with vast experience across Industry and Academia</p>
+              <div class="work--lockup">
+                <h3 style="text-align: center;">TBD</h3>
+                <!-- <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">LOSOA SJAJS</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">JAJS JSJSJA</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">AJAJ JSJA</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                </ul>                
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div> -->
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Team</h2>
+              <p style="text-align: center;"></p>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-center">
+                    <p href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/olawale.jpeg" alt="Olawale">
+                      </div>
+                      <p class="slider--item-title">Olawale Onabola</p>
+                      <p class="slider--item-description">Machine Learning Engineer <br><a href="https://www.linkedin.com/in/olawaleonabola" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="https://www.olawaleonabola.me" target="_blank"><i class="fa fa-globe"></i></a></p>
+                    </p>
+                  </li>
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/busayo.jpeg" alt="Oluwabusayomi">
+                      </div>
+                      <p class="slider--item-title">oluwabusayomi odukoya</p>
+                      <p class="slider--item-description">Software Developer <br><a href="https://www.linkedin.com/in/oluwabusayomi-odukoya-343a29179" target="_blank"><i class="fa fa-linkedin"></i></a> <!-- <a href="https://www.olawaleonabola.me" target="_blank"><i class="fa fa-globe"></i></a> --></p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/olumide.jpeg" alt="Olumide">
+                      </div>
+                      <p class="slider--item-title">Olumide Durotoluwa</p>
+                      <p class="slider--item-description">Business Analyst <br> <a href="https://www.linkedin.com/in/olumide-durotoluwa" target="_blank"><i class="fa fa-linkedin"></i></a> <!-- <a href="https://www.olawaleonabola.me" target="_blank"><i class="fa fa-globe"></i></a> --></p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Advisors</h2>
+              <p style="text-align: center;">We are backed by world renowed researchers and Industry experts in the field of AI</p>
+              <div class="work--lockup">
+                <h3 style="text-align: center;">TBD</h3>
+                <!-- <ul class="slider">
+                  <li class="slider--item slider--item-center">
+                    <p href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/olawale.jpeg" alt="Olawale">
+                      </div>
+                      <p class="slider--item-title">Olawale Onabola</p>
+                      <p class="slider--item-description">Machine Learning Engineer <br><a href="https://www.linkedin.com/in/olawaleonabola" target="_blank"><i class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/olawaleonabola"></i></a> <a href="https://www.olawaleonabola.me" target="_blank"><i class="fa fa-globe"></i></a></p>
+                    </p>
+                  </li>
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-metiew-smith.jpg" alt="Oluwabusayomi">
+                      </div>
+                      <p class="slider--item-title">oluwabusayomi odukoya</p>
+                      <p class="slider--item-description">Software Developer <br><a href="https://www.linkedin.com/in/olawaleonabola" target="_blank"><i class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/olawaleonabola"></i></a> <a href="https://www.olawaleonabola.me" target="_blank"><i class="fa fa-globe"></i></a></p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Stanford AI Lab</p>
+                      <p class="slider--item-description">Business Developer <br> <a href="https://www.linkedin.com/in/olawaleonabola" target="_blank"><i class="fa fa-linkedin" target="_blank" href="https://www.linkedin.com/in/olawaleonabola"></i></a> <a href="https://www.olawaleonabola.me" target="_blank"><i class="fa fa-globe"></i></a></p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div> -->
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div id="googlemaps"></div>
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <!-- <p>415</p>/ -->
+                    <a href="mailto:ouremail@gmail.com">enquiries@bridgethewall.tech</a>
+                    <!-- <a href="tel:+16177147000">+1 617-714-7000</a> -->
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="https://twitter.com/bridge_the_wall">Twitter</a></li>
+                    <li><a href="https://github.com/bridgethewall">Github</a></li>
+                    <li><a href="mailto:enquiries@bridgethewall.tech">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-</article>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>About</li>
+    <li>Apply</li>
+    <li>Mentors</li>
+    <li>Team</li>
+    <li>Advisors</li>
+    <li>Contact us</li>
+  </ul>
+</div>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRQhBS05XayQ3PFc2x3hK99mO1tM1k8co"></script>
+
+<script type="text/javascript">
+
+  google.maps.event.addDomListener(window, 'load', init);
+
+  function init() {
+    // Basic options for a simple Google Map
+    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    var mapOptions = {
+      // How zoomed in you want the map to start at (always required)
+      zoom: 17,
+      streetViewControl: false, // hide the yellow Street View pegman
+      scaleControl: true, // allow users to zoom the Google Map
+
+      // The latitude and longitude to center the map (always required)
+      center: new google.maps.LatLng(42.362750, -71.089850), // New York
+
+      // How you would like to style the map.
+      // This is where you would paste any style found on Snazzy Maps.
+      styles: [{"featureType":"all","elementType":"all","stylers":[{"invert_lightness":true},{"saturation":"-9"},{"lightness":"0"},{"visibility":"simplified"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"weight":"1.00"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"weight":"0.49"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"on"},{"weight":"0.01"},{"lightness":"-7"},{"saturation":"-35"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"visibility":"on"}]}]
+    };
+
+    // Get the HTML DOM element that will contain your map
+    // We are using a div with id="map" seen below in the <body>
+    var mapElement = document.getElementById('googlemaps');
+
+    // Create the Google Map using our element and options defined above
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    // Let's also add a marker while we're at it
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(42.362750, -71.089850),
+      map: map,
+    });
+  }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>
